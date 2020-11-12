@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style/main.css">
+    <link rel="stylesheet" href="assets/style/responsive.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <title>Recreate</title>
 </head>
@@ -11,17 +12,24 @@
     <div class="wrap">
         <div class="header">
             <div class="logo-left">
-                <img id="pic" src="assets/img/uat-logo.png">
+                <img id="pic" src="assets/img/uat-logo.png" alt="logo">
             </div> 
             <nav>
+                <label for="btn" class="icon">
+                    <span class="fa fa-bars"></span>
+                </label>
+                <input type="checkbox" id="btn">
                 <ul class="firstUl">
-                    <li><a class="firstA" 
-                        href="#">Home</a></li>
-                    <li><a class="firstA" href="#">Degrees <i class="fa fa-caret-down"></i> </a>
+                    <li><a class="active" href="#">Home</a></li>
+                        
+                    <li><label for="btn-1" class="show">Degrees +</label>
+                        <a href="#">Degrees <i class="fa fa-caret-down"></i> </a>
+                        <input type="checkbox" name="" id="btn-1">
                         <ul class="secondUl">
-                            <li><a href="#">View all Degrees</a></li>
         
-                            <li><a href="#">Buisness & Inoovation<i class="fa fa-caret-down"></i></a>
+                            <li><label for="btn-3" class="show">Buisness & Inoovation +</label>
+                                <a href="#">Buisness & Inoovation<i class="fa fa-caret-down"></i></a>
+                                <input type="checkbox" name="" id="btn-3">
                                 <ul>
                                     <li><a href="#">Buisness and Tecnolegy</a></li>
                                     <li><a href="#">Technology Innovation (MS)</a></li>
@@ -29,7 +37,9 @@
                                     <li><a href="#">Technology Studies</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Creation & Simulation<i class="fa fa-caret-down"></i></a>
+                            <li><label for="btn-4" class="show">Creation & Simulation +</label>
+                                <a href="#">Creation & Simulation<i class="fa fa-caret-down"></i></a>
+                                <input type="checkbox" name="" id="btn-4">
                                 <ul class="creationUl">
                                     <li><a href="#">Digital Maker & Fabrication</a></li>
                                     <li><a href="#">Human Computer Interaction</a></li>
@@ -38,7 +48,9 @@
                                 </ul>
         
                             </li>
-                            <li><a href="#">Cyber Security<i class="fa fa-caret-down"></i></a>
+                            <li><label for="btn-5" class="show">Cyber Security +</label>
+                                <a href="#">Cyber Security<i class="fa fa-caret-down"></i></a>
+                                <input type="checkbox" name="" id="btn-5">
                                 <ul class="cyberUl">
                                     <li><a href="#">Cyber Security (MS)</a></li>
                                     <li><a href="#">Network Engineering</a></li>
@@ -46,11 +58,16 @@
                                     <li><a href="#">Technology Forensics</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Digital Arts</a></li>
+                            <li><label for="btn-10" class="show">Digital Arts</label>
+                                <a href="#">Digital Arts</a>
+                                <input type="checkbox" name="" id="btn-10"></li>
                         </ul>
                     </li>
-                    <li><a class="firstA" href="#">Admission <i class="fa fa-caret-down"></i></a>
+                    <li><label for="btn-2" class="show">Admission +</label>
+                        <a  href="#">Admission <i class="fa fa-caret-down"></i></a>
+                        <input type="checkbox" name="" id="btn-2">
                         <ul class="secondUl">
+                            <div class="scroll_admission">
                             <li><a href="#">Academic Calendar</a></li>
                             <li><a href="#">Featured Alumni</a></li>
                             <li><a href="#">How To Apply</a></li>
@@ -61,10 +78,14 @@
                             <li><a href="#">Transfer Credits</a></li>
                             <li><a href="#">Tuition</a></li>
                             <li><a href="#">Uatx Open House</a></li>
+                            </div>
                         </ul>
                     </li>
-                    <li><a class="firstA" href="#">Academics<i class="fa fa-caret-down"></i></a>
+                    <li><label for="btn-6" class="show">Academics +</label>
+                        <a href="#">Academics<i class="fa fa-caret-down"></i></a>
+                        <input type="checkbox" name="" id="btn-6">
                         <ul class="secondUl">
+                            <div>
                             <li><a href="#">UAT online</a></li>
                             <li><a href="#">Academic catalog</a></li>
                             <li><a href="#">Featured Faculty</a></li>
@@ -73,20 +94,28 @@
                             <li><a href="#">Student Innovation</a></li>
                             <li><a href="#">Synchronic Learning</a></li>
                             <li><a href="#">Wall Of Fame</a></li>
+                            </div>
                         </ul>
                     </li>
-                    <li><a class="firstA" href="#">Student Experience <i class="fa fa-caret-down"></i></a>
+                    <li><label for="btn-7" class="show">Student Exsperience +</label>
+                        <a href="#">Student Experience <i class="fa fa-caret-down"></i></a>
+                        <input type="checkbox" name="" id="btn-7">
                         <ul class="secondUl">
+                            <div>
                             <li><a href="#">Commencement</a></li>
                             <li><a href="#">Internship</a></li>
                             <li><a href="#">Photo Gallery</a></li>
                             <li><a href="#">Publication</a></li>
                             <li><a href="#">Student Blog</a></li>
                             <li><a href="#">Student Housing</a></li>
+                            </div>
                         </ul>
                     </li>
-                    <li><a class="firstA" href="#">About UAT<i class="fa fa-caret-down"></i></a>
+                    <li><label for="btn-8" class="show">About UAT +</label>
+                        <a href="#">About UAT<i class="fa fa-caret-down"></i></a>
+                        <input type="checkbox" name="" id="btn-8">
                         <ul class="secondUl">
+                            <div>
                             <li><a href="#">About UAT</a></li>
                             <li><a href="#">Accreditation</a></li>
                             <li><a href="#">At Glance </a></li>
@@ -95,14 +124,19 @@
                             <li><a href="#">Important Numbers</a></li>
                             <li><a href="#">Mission</a></li>
                             <li><a href="#">Why UAT</a></li>
+                            </div>
                         </ul>
                     </li>
-                    <li><a  class="firstA" href="#">News & Events<i class="fa fa-caret-down"></i> </a>
+                    <li><label for="btn-9" class="show">News & Events +</label>
+                        <a  href="#">News & Events<i class="fa fa-caret-down"></i> </a>
+                        <input type="checkbox" name="" id="btn-9">
                         <ul class="secondUl">
+                            <div>
                             <li><a href="#">Events</a></li>
                             <li><a href="#">Press</a></li>
                             <li><a href="#">Social Feeds</a></li>
                             <li><a href="#">UAT Tech-Blog</a></li>
+                            </div>
                         </ul>
                     </li>
                 </ul>
@@ -117,7 +151,6 @@
             <a class="link" href="#">(800) 658-5744</a>
         </div>
 
-
         <div class="video_content">
             <video id="player" autoplay muted loop playsinline>
                 <source src="assets/img/home-loop1.mp4" type="video/mp4">
@@ -127,7 +160,74 @@
         </div> 
     </div>
 
-         
+    <div class="main-hoveddel">
+        <h1></h1>
+        <div class="row">
+
+            <div class="degree">
+              <div class="content">
+                <img src="assets/img/buisness_innovation.PNG" alt="buisness_innovation">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+
+            </div>
+            <div class="degree">
+              <div class="content">
+              <img src="assets/img/cration&simulation.PNG" alt="Creation&simulation" >
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="degree">
+              <div class="content">
+              <img src="assets/img/cyber_security.PNG" alt="cyber_security" >
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+            
+            <div class="degree">
+              <div class="content">
+                <img src="assets/img/digital_arts.PNG" alt="digital_arts">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="degree">
+              <div class="content">
+              <img src="assets/img/game_studies.PNG" alt="game_studies" >
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="degree">
+              <div class="content">
+              <img src="assets/img/software_engineering.PNG" alt="software_engineering">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+              </div>
+            </div>
+
+            <div class="video-content2">
+
+                <video id="player2" autoplay muted loop playsinline>
+                    <source src="assets/img/home-loop2.mp4" type="video/mp4">
+                </video>
+        
+            </div>
+    </div>
+
+
+
+    <div class="footer">
+
+    </div>
+
+        
     <script src="assets/script/animation.js"></script>
 </body>
 </html>

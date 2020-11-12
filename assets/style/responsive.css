@@ -1,0 +1,128 @@
+@media(max-width:1010px){
+    .firstUl{
+        float: left;
+        margin-left: 0px;
+    }
+    .creationUl, .creationUl li{
+    width: 170px;
+    } 
+    nav{
+        border: solid;
+    }
+    .secondUl ul, .secondUl ul li{
+        width: 170;
+        height: 50px;
+    }  
+ 
+    .firstUl li, .secondUl li{
+        display: block;
+        width: 100%;
+    }
+    .secondUl{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .secondUl li{
+        border-bottom: 0px;
+        margin: 0px;
+    }
+    .secondUl ul li{
+        position: static;
+    }
+    .secondUl a{
+        text-align: center;
+        margin: 0px;
+    }
+    .secondUl ul a{
+        text-align:center ;
+
+    }
+    .show{
+        display: block;
+        font-size: 18px;
+        line-height: 30px;
+        cursor: pointer;
+    }
+    .show:hover{
+        background-color: black;
+        color: white;
+    }
+    .firstUl a:hover{
+        box-shadow: none;
+    }
+    .icon{
+        display:block;
+        color: black;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+    .icon:hover{
+        color: red;
+    }
+    .show + a, ul{
+        display: none;
+    }
+    [id^=btn]:checked + ul{
+        display: block;
+        transition: max-height 1s;
+		max-height: 300px;
+		opacity: 1.0;
+    }
+    .wrap{
+        flex-direction: column;
+    }
+    .nav{
+        flex: none;
+    }
+    .logo-left{
+        flex: none;
+    }
+    .side{
+        display: none;
+    }
+    .header{
+        flex-direction: column;
+        justify-content: normal;
+        align-items: normal;
+    }
+    nav{
+        position: relative;
+        z-index: 999;
+        width: 100%;
+        
+    }
+    .firstUl{
+        margin-bottom: 40px;
+        border: solid black;
+    }
+    .firstUl li{
+        border: solid black;
+    }
+    .secondUl ul{
+        top: -20px;
+        left: 268px;
+    }
+    /*
+    .secondUl li{
+        top: 0px;
+        left: 100px;
+    }*/
+    .secondUl div{
+        height: 150px;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100%;
+    }
+    .icon{
+        position: absolute;
+        top: -80px;
+        font-size: 50px;
+    }
+    
+}
