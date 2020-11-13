@@ -29,13 +29,14 @@
     height: auto;
 }
 
-
 .logo-left {
     display: flex;
+
     flex: 1;
     justify-content: center;
     align-items: center;
     background-color: #f1f1f1;
+
 }
 #pic:hover{
     animation: shake 0.5s;
@@ -92,11 +93,22 @@ body{
     color: red;
     cursor: pointer;
 }
+.footer-copy{
+    background-color: #555;
+    width: 100%;
+    height: 3vh;
+}
+.footer-copy p{
+    text-align: center;
+    padding: 5px;
+    font-size: 12px;
+    color: white;
+}
 .footer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 15vh;
+    height: 10vh;
 }
 .logo{
     margin:80px 0px;
@@ -158,7 +170,7 @@ h4 span{
       align-items: center;
       overflow: auto;
       background-color: #f1f1f1;
-      border: solid black;
+    
       flex: 3;
       width: 100%;
       white-space: nowrap;
@@ -168,26 +180,29 @@ h4 span{
     background-color: white;
     padding: 10px;
     border: solid black;
+    border-style: double;
   }
 
   .content img{
-    width: 100%;
+    max-width: 100%;
     height: auto;
-    border: solid black;
   }
-h1{
-    position: absolute;
-    right: 500px;
-    margin: 30px;
-}
+  .content ul{
+      list-style:none;
+  }
+  .content h4{
+      text-decoration: underline;
+  }
+
 .degree {
     display: inline-block;
-    min-width: 400px;
+    min-width: 30%;
     width: 100%;
     height: auto;
     margin: 20px;
     background-color: white;
-    border: solid black;
+    justify-content: center;
+    
 }
 .video-content2{
     display: flex;
@@ -209,13 +224,12 @@ h1{
     margin:0;
     padding:0;
     font-family: 'Poppins', sans-serif;
-    border: solid black;
 }
 nav{
     background: #f1f1f1;
     width: 80%;
     float: right;
-    padding: 10px;
+    
 }
 .cyberUl{
     padding: 0px;
@@ -224,11 +238,9 @@ nav{
 }
 .secondUl{
     text-align: center;
-    margin: 0px;
 }
 .secondUl ul{
     text-align: center;
-    margin: '';
 }
 .creationUl{
     text-align: center;
@@ -250,6 +262,9 @@ nav ul li{
     float: left;
     background: #f1f1f1;
     
+}
+*{
+    border: solid black;
 }
 nav ul li a{
     color: black;
@@ -301,7 +316,6 @@ nav ul li:hover > ul{
 
 nav ul ul li{
     position: relative;
-    margin: 0px;
     width: 150px;
     float: none;
     display: list-item;
