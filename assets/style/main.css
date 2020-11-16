@@ -14,7 +14,6 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     min-height: 100vh;
-
 }
 
 .header {
@@ -165,33 +164,6 @@ h4 span{
       white-space: nowrap;
   }
 
-  .content {
-    background-color: white;
-    padding: 10px;
-    border-style: double;
-  }
-
-  .content img{
-    max-width: 100%;
-    height: auto;
-  }
-  .content ul{
-      list-style:none;
-  }
-  .content h4{
-      text-decoration: underline;
-  }
-
-.degree {
-    display: inline-block;
-    min-width: 30%;
-    width: 100%;
-    height: auto;
-    margin: 20px;
-    background-color: white;
-    justify-content: center;
-    
-}
 .video-content2{
     display: flex;
     flex-direction: column;
@@ -257,10 +229,36 @@ h4 span{
     }
     
     .dropdown li:hover {
+        color: red;
         opacity: 0.6;
         background-color: #f6f6f6;
     }
+/*------------End------------*/
 
+/*------------Slide------------*/
+.content {
+    display: flex;
+    flex-direction: column;
+    border-style: double;
+    background-color: white;
+    margin: 10px;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content img {
+    text-align: center;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content a {
+    text-decoration: none;
+    color: black;
+}
 
 /*------------End------------*/
 @keyframes shake {

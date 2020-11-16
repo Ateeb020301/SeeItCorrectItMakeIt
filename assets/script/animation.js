@@ -1,4 +1,4 @@
-var sloganArr = ["QUBIT","PIXELS","FIREWALL","YOUR BRAIN?"]
+var sloganArr = ["QUBIT","PIXELS","FIREWALL","BRAIN?"]
 var slogan = document.getElementById("slogan");
 var buisnessUl = document.getElementById("buisnessUl");
 var creationUl = document.getElementById("creationUl");
