@@ -1,160 +1,83 @@
 @media(max-width:1405px){
-    .firstUl{
-        float: left;
-        margin-left: 0px;
-    }
- 
- 
-    .secondUl{
-        top: 70px;
-        position: static;
-        border-top: none;
-        float: none;
-        display: none;
-        opacity: 1;
-        visibility: visible;
-    }
-    .secondUl li{
-        border-bottom: 0px;
-        margin: 0px;
-    }
-
-    .secondUl a{
-        text-align: center;
-        margin: 0px;
-    }
-
-    .show{
-        display: block;
-        font-size: 18px;
-        line-height: 30px;
-        cursor: pointer;
-    }
-    .show:hover{
-        color: red;
-    }
-    .firstUl a:hover{
-        box-shadow: none;
-    }
-    .icon{
-        display:block;
-        color: black;
-        position: absolute;
-        right: 40px;
-    }
-    .icon:hover{
-        color: red;
-    }
-    .show + a, ul{
-        display: none;
-    }
-    [id^=btn]:checked + ul{
-        display: block;
-        transition: max-height 1s;
-		max-height: 700px;
-        opacity: 1.0;
-    }
-        
-    
     .wrap{
         flex-direction: column;
     }
-    .nav{
-        flex: none;
-    }
-    .logo-left{
-        flex: none;
-    }
-    .side{
+
+    .side {
         display: none;
     }
-    .header{
-        flex-direction: column;
-        justify-content: normal;
-        align-items: normal;
-    }
-    nav{
-        position: relative;
-        z-index: 999;
-        width: 100%;
-        height: inherit;
-        
-    }
-    .firstUl{
-        width: 100%;
-    }
-    .secondUl ul li a{
-        font-size: 15px;
-    }
-    .secondUl ul li{
-        position: static;
-        display: list-item;
-        border-bottom: 1px solid rgba((0), 0, 0, 0.4);
-        margin: 0px;
-    }
 
-    .secondUl ul li{
-        width: fit-content;
-    }
-    .secondUl ul, .secondUl ul li{
-        width: 170;
-        height: 50px;
-    }  
- 
-    .firstUl li, .secondUl li, .secondUl ul li{
-        display: block;
-        width: 100%;
-    }
-
-    .secondUl ul li a{
-        text-align:center ;
-    
-    }
     .video-content2{
         display: none;
     }
-    
-    .secondUl ul{
-        position: absolute;
-        top: 35px;
-        left: 0px;
-        z-index: 1000;
-    }
-    /*
-    .secondUl li{
-        top: 0px;
-        left: 100px;
-    }*/
-    .secondUl div{
-        height: 150px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: 100%;
-    }
-    .icon{
-        position: absolute;
-        top: -70px;
-        font-size: 40px;
-    }
+
     .footer{
         flex-direction: column;
         height: auto;
     }
+
     .footer-links{
         display: flex;
         flex: none;
         width: 100%;
     }
+
     .footer-socials{
         flex: none;
         width: 100%;
     }
+
     .footer-copy{
         height: auto;
     }
+
     .content ul{
         text-decoration:none;
         display: block;
+    }
+    
+    .header {
+        flex-direction: column;
+    }
+
+    .menu ul:not(.dropdown) {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    
+    .menu ul li:not(.dropdown) {
+        list-style: none;
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .menu a {
+        color: black;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .menu ul li:hover .dropdown {
+        display: flex;
+        position: static;
+        padding-left: 80px;
+    }
+    
+    .menu .dropdown {
+        display: none;
+        flex-direction: column;
+        background-color: none;
+    }
+
+    .dropdown a {
+        font-size: 14px;
+    }
+
+    .dropdown li {
+        border-bottom: 1px solid rgba(0,0,0,0.5);
+        padding: 15px;
     }
     
 }
@@ -170,9 +93,9 @@
         font-size: 30px;
     }
 
-.degree{
-    min-width: 80%;
-}
+    .degree{
+        min-width: 80%;
+    }
 
     .degree{
         background-color: #f1f1f1;
@@ -183,10 +106,6 @@
     }
     .main-hoveddel{
         height: 70vh;
-    }
-    .icon{
-        font-size: 30px;
-        top: -60px;
     }
 
     ::-webkit-scrollbar {
