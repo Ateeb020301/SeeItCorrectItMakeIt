@@ -246,6 +246,9 @@ h4 span{
     align-items: center;
     justify-content: center;
 }
+.active{
+    color: red;
+}
 
 .content img {
     text-align: center;
